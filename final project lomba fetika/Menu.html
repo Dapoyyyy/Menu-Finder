@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Finder</title>
+
+    <!-- FONT BBH SANS HEGARTY -->
+    <style>
+        @font-face {
+            font-family: 'BBH Sans Hegarty';
+            src: url('fonts/BBH-Sans-Hegarty.woff2') format('woff2'),
+                 url('fonts/BBH-Sans-Hegarty.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+        .bbh-font { font-family: 'BBH Sans Hegarty', sans-serif; }
+        .text-glow { text-shadow: 0 4px 25px rgba(0, 0, 0, 0.35); }
+    </style>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            AOS.init({ duration: 1100, once: true });
+        });
+    </script>
+</head>
+<body class="bg-white">
+
+<!-- HEADER -->
+<header class="bg-white/60 backdrop-blur-md fixed top-0 left-0 w-full z-50">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 lg:h-20">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+<style>
+    .font-title {
+        font-family: 'Montserrat', sans-serif;
+    }
+</style>
+
+<div>
+    <a href="index.html" class="flex items-center">
+        <span class="text-2xl font-title">Menu Finder</span>
+    </a>
+</div>
+
+
+            
+            <div class="hidden lg:flex lg:items-center lg:space-x-10">
+                <a href="Menu.html" class="hover:text-opacity-70">Menu</a>
+                <a href="Kontak.html" class="hover:text-opacity-70">Kontak</a>
+                <a href="Manfaat.html" class="hover:text-opacity-70">Manfaat</a>
+                <a href="Tentang.html" class="hover:text-opacity-70">Tentang</a>
+            </div>
+            <a href="explore sekarang.html"
+   class="inline-flex items-center px-6 py-3 text-base font-semibold text-white 
+          bg-black rounded-full hover:bg-yellow-300 hover:text-black 
+          transition-all duration-300 ease-out transform hover:scale-105 active:scale-95">
+    Explore Sekarang
+</a>
+        </div>
+    </div>
+</header>
+
+<!-- SECTION MENU MAKANAN BERGIZI -->
+<section class="pt-32 pb-20 px-6 bg-cover bg-center bg-fixed relative" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');">
+
+    <!-- BLUR OVERLAY -->
+    <div class="absolute inset-0 bg-white/40 backdrop-blur-md"></div>
+
+    <div class="relative">
+    <h2 class="text-4xl font-bold text-center mb-10 text-white">
+        Menu Makanan Bergizi
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- ITEM 1 -->
+        <div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+            <img src="https://thegorbalsla.com/wp-content/uploads/2019/06/Resep-Salad-Buah.jpg" class="rounded-xl mb-4 w-full h-48 object-cover">
+            <h3 class="text-2xl font-semibold mb-2">Salad Buah Segar</h3>
+            <p class="mb-2">Makanan kaya vitamin, serat, dan antioksidan.</p>
+            <h4 class="font-semibold">Cara Membuat:</h4>
+            <ul class="list-disc ml-5 mt-2">
+                <li>Potong buah (apel, melon, anggur, kiwi).</li>
+                <li>Tambahkan yogurt rendah lemak.</li>
+                <li>Beri madu sedikit.</li>
+                <li>Aduk dan sajikan dingin.</li>
+            </ul>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+            <img src="https://resepyou.com/wp-content/uploads/2022/09/Oatmeal-Pisang-Enak-Untuk-Sarapan.jpg" class="rounded-xl mb-4 w-full h-48 object-cover">
+            <h3 class="text-2xl font-semibold mb-2">Oatmeal Pisang</h3>
+            <p class="mb-2">Makanan tinggi serat dan energi.</p>
+            <h4 class="font-semibold">Cara Membuat:</h4>
+            <ul class="list-disc ml-5 mt-2">
+                <li>Masak oatmeal dengan air atau susu.</li>
+                <li>Tambahkan pisang iris.</li>
+                <li>Tambahkan madu & kacang almond.</li>
+                <li>Sajikan hangat.</li>
+            </ul>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+            <img src="https://cdn.idntimes.com/content-images/community/2023/08/ins-saver-868477387-b92c30be9bda955e59d280759a6f55b9.jpg" class="rounded-xl mb-4 w-full h-48 object-cover">
+            <h3 class="text-2xl font-semibold mb-2">Ayam Panggang Rempah</h3>
+            <p class="mb-2">Sumber protein tinggi dan rendah minyak.</p>
+            <h4 class="font-semibold">Cara Membuat:</h4>
+            <ul class="list-disc ml-5 mt-2">
+                <li>Bumbui ayam dengan bawang putih, merica, lemon, oregano.</li>
+                <li>Panggang 30–40 menit.</li>
+                <li>Sajikan dengan sayur rebus.</li>
+            </ul>
+        </div>
+
+            <!-- ITEM 4 -->
+        <div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+            <img src="https://asset.kompas.com/crops/nLoULbdXgKe_ioiaLytIs87hWx0=/0x0:1000x667/750x500/data/photo/2021/06/29/60dabf192cc9b.jpg" class="rounded-xl mb-4 w-full h-48 object-cover">
+            <h3 class="text-2xl font-semibold mb-2">Smoothie Hijau</h3>
+            <p class="mb-2">Minuman sehat kaya vitamin & mineral.</p>
+            <h4 class="font-semibold">Cara Membuat:</h4>
+            <ul class="list-disc ml-5 mt-2">
+                <li>Blender bayam, pisang, yogurt, madu.</li>
+                <li>Tambahkan es batu.</li>
+                <li>Blender hingga halus.</li>
+            </ul>
+        </div>
+
+        <!-- ITEM 5 -->
+        <div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+            <img src="https://asset.kompas.com/crops/sy3Yn_u8c-OJpQkH7LJaJockXZA=/0x112:751x612/750x500/data/photo/2023/06/13/6487bda36a896.jpeg" class="rounded-xl mb-4 w-full h-48 object-cover">
+            <h3 class="text-2xl font-semibold mb-2">Sayur Sop Ayam</h3>
+            <p class="mb-2">Rendah lemak dan kaya nutrisi untuk daya tahan tubuh.</p>
+            <h4 class="font-semibold">Cara Membuat:</h4>
+            <ul class="list-disc ml-5 mt-2">
+                <li>Rebus ayam hingga matang.</li>
+                <li>Tambahkan wortel, kentang, brokoli.</li>
+                <li>Bumbui garam, lada, bawang goreng.</li>
+            </ul>
+        </div>
+
+        <!-- ITEM 6 -->
+        <div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+            <img src="https://img-global.cpcdn.com/recipes/037b60bcfa7c3713/680x482cq70/nasi-goreng-merah-telur-foto-resep-utama.jpg" class="rounded-xl mb-4 w-full h-48 object-cover">
+            <h3 class="text-2xl font-semibold mb-2">Nasi Merah + Telur Rebus</h3>
+            <p class="mb-2">Menu simpel tinggi protein dan serat.</p>
+            <h4 class="font-semibold">Cara Membuat:</h4>
+            <ul class="list-disc ml-5 mt-2">
+                <li>Masak nasi merah.</li>
+                <li>Rebus telur 7–10 menit.</li>
+                <li>Tambahkan sayur rebus.</li>                
+            </ul>
+        </div>
+
+        <!-- ITEM 7 -->
+<div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+    <img src="https://img-global.cpcdn.com/recipes/235583475053cf92/1200x630cq70/photo.jpg" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Salad Sayur Sehat</h3>
+    <p class="mb-2">Rendah kalori, tinggi serat, dan menyegarkan.</p>
+    <h4 class="font-semibold">Cara Membuat:</h4>
+    <ul class="list-disc ml-5 mt-2">
+        <li>Iris selada, mentimun, tomat, wortel.</li>
+        <li>Campurkan olive oil & lemon.</li>
+        <li>Aduk dan sajikan dingin.</li>
+    </ul>
+</div>
+<!-- ITEM 8 -->
+<div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+    <img src="https://curupekspress.disway.id/upload/8aa9c05e86f270d600debf675782594f.jpg" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Smoothie Alpukat Pisang</h3>
+    <p class="mb-2">Minuman creamy penuh energi & lemak baik.</p>
+    <h4 class="font-semibold">Cara Membuat:</h4>
+    <ul class="list-disc ml-5 mt-2">
+        <li>Blender alpukat, pisang, susu, madu.</li>
+        <li>Tambahkan es batu.</li>
+        <li>Blender hingga lembut.</li>
+    </ul>
+</div>
+
+<!-- ITEM 9 -->
+<div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+    <img src="https://img-global.cpcdn.com/recipes/9b620925d056c618/680x482cq70/sup-telur-jagung-foto-resep-utama.jpg" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Sup Jagung Manis</h3>
+    <p class="mb-2">Rendah lemak namun kaya serat dan vitamin.</p>
+    <h4 class="font-semibold">Cara Membuat:</h4>
+    <ul class="list-disc ml-5 mt-2">
+        <li>Rebus jagung manis.</li>
+        <li>Tambahkan wortel & brokoli.</li>
+        <li>Bumbui dengan garam & lada.</li>
+    </ul>
+</div>
+
+<!-- ITEM 10 -->
+<div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.HbhWOUe5K193lkJohwO5LQHaEK?pid=Api&P=0&h=180?w=650" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Omelet Sayur</h3>
+    <p class="mb-2">Sumber protein dan vitamin yang praktis.</p>
+    <h4 class="font-semibold">Cara Membuat:</h4>
+    <ul class="list-disc ml-5 mt-2">
+        <li>Kocok telur dengan garam & lada.</li>
+        <li>Tambahkan wortel, bayam, dan daun bawang.</li>
+        <li>Masak dengan sedikit minyak.</li>
+    </ul>
+</div>
+
+<!-- ITEM 11 -->
+<div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.JucUaeL8PwmhIJKp27QkbgHaE8?pid=Api&P=0&h=180" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Bubur Kacang Hijau</h3>
+    <p class="mb-2">Kaya energi, protein nabati, dan serat.</p>
+    <h4 class="font-semibold">Cara Membuat:</h4>
+    <ul class="list-disc ml-5 mt-2">
+        <li>Rebus kacang hijau hingga mekar.</li>
+        <li>Tambahkan gula merah & santan.</li>
+        <li>Sajikan hangat.</li>
+    </ul>
+</div>
+
+<!-- ITEM 12 -->
+<div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.0NPCtZurNZPQ_sJ4icT_CwHaE7?pid=Api&P=0&h=180" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Udang Rebus Lemon</h3>
+    <p class="mb-2">Protein tinggi & rendah kalori.</p>
+    <h4 class="font-semibold">Cara Membuat:</h4>
+    <ul class="list-disc ml-5 mt-2">
+        <li>Rebus udang 3–5 menit.</li>
+        <li>Tambahkan perasan lemon.</li>
+        <li>Sajikan dengan selada.</li>
+    </ul>
+</div>
+
+<!-- ITEM 13 -->
+<div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+    <img src="https://img-global.cpcdn.com/recipes/85b089f8e4ed0883/680x482cq70/nasi-tim-ayam-jamur-foto-resep-utama.jpg" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Nasi Tim Ayam</h3>
+    <p class="mb-2">Lembut, mudah dicerna, dan bergizi.</p>
+    <h4 class="font-semibold">Cara Membuat:</h4>
+    <ul class="list-disc ml-5 mt-2">
+        <li>Tumis ayam cincang & bawang putih.</li>
+        <li>Tambah wortel lalu kukus dengan nasi.</li>
+        <li>Sajikan hangat.</li>
+    </ul>
+</div>
+
+
+<!-- ITEM 14 -->
+<div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+    <img src="https://i0.wp.com/resepkoki.id/wp-content/uploads/2018/01/Resep-Tahu-Kukus.jpg?fit=1280%2C940&ssl=1" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Tahu Kukus Sehat</h3>
+    <p class="mb-2">Tinggi protein nabati & rendah lemak.</p>
+    <h4 class="font-semibold">Cara Membuat:</h4>
+    <ul class="list-disc ml-5 mt-2">
+        <li>Potong tahu & beri bumbu bawang.</li>
+        <li>Kukus 10 menit.</li>
+        <li>Sajikan dengan saus kecap.</li>
+    </ul>
+</div>
+
+<!-- ITEM 15 -->
+<div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.LlcOUVQTIwiWMn84ugoWFwHaEK?pid=Api&P=0&h=180" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Kentang Rebus Lada Hitam</h3>
+    <p class="mb-2">Sumber karbohidrat kompleks & serat.</p>
+    <h4 class="font-semibold">Cara Membuat:</h4>
+    <ul class="list-disc ml-5 mt-2">
+        <li>Rebus kentang hingga empuk.</li>
+        <li>Taburi lada hitam & olive oil.</li>
+        <li>Sajikan hangat.</li>
+    </ul>
+</div>
+
+<!-- ITEM 16 -->
+<div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.6v6OyVSiGQ6Llj8Ys4hcvgHaE6?pid=Api&P=0&h=180" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Ikan Salmon Panggang</h3>
+    <p class="mb-2">Kaya omega-3 untuk kesehatan otak.</p>
+    <h4 class="font-semibold">Cara Membuat:</h4>
+    <ul class="list-disc ml-5 mt-2">
+        <li>Bumbui salmon dengan lemon & lada.</li>
+        <li>Panggang 12–15 menit.</li>
+        <li>Sajikan dengan brokoli kukus.</li>
+    </ul>
+</div>
+
+<!-- ITEM 17 -->
+<div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+    <img src="https://i1.wp.com/assets-pergikuliner.com/uploads/bootsy/image/14067/medium_Egg_Sandwich__www.cdn3.tmbi.com_.jpg" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Roti Gandum + Telur</h3>
+    <p class="mb-2">Menu sarapan ringan & bernutrisi.</p>
+    <h4 class="font-semibold">Cara Membuat:</h4>
+    <ul class="list-disc ml-5 mt-2">
+        <li>Panggang roti gandum.</li>
+        <li>Tambahkan telur rebus/ceplok.</li>
+        <li>Tambahkan selada.</li>
+    </ul>
+</div>
+
+<!-- ITEM 18 -->
+<div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+    <img src="https://thebrilliantkitchen.com/wp-content/uploads/2020/11/Garlic-Shrimp-and-Broccoli-from-a-Toaster-Oven.jpg">
+    <h3 class="text-2xl font-semibold mb-2">Brokoli Tumis Bawang</h3>
+    <p class="mb-2">Kaya vitamin C & antioksidan.</p>
+    <h4 class="font-semibold">Cara Membuat:</h4>
+    <ul class="list-disc ml-5 mt-2">
+        <li>Tumis bawang putih.</li>
+        <li>Masukkan brokoli & garam.</li>
+        <li>Masak 5 menit.</li>
+    </ul>
+</div>
+
+<!-- ITEM 19 -->
+<div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.wH6iAi2ldvqwXO6FnsfzoQHaE7?pid=Api&P=0&h=180" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Jus Wortel Segar</h3>
+    <p class="mb-2">Tinggi vitamin A untuk kesehatan mata.</p>
+    <h4 class="font-semibold">Cara Membuat:</h4>
+    <ul class="list-disc ml-5 mt-2">
+        <li>Blender wortel, madu, dan air.</li>
+        <li>Saring jika perlu.</li>
+        <li>Sajikan dingin.</li>
+    </ul>
+</div>
+
+<!-- ITEM 20 -->
+<div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+    <img src="https://cdn0-production-images-kly.akamaized.net/2efU38vw8lPyg9ToM2li4qT3_HY=/0x43:999x606/680x383/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/4176460/original/052123100_1664524806-shutterstock_2128010987.jpg" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Pisang Coklat Oat</h3>
+    <p class="mb-2">Manis sehat, tinggi serat dan energi.</p>
+    <h4 class="font-semibold">Cara Membuat:</h4>
+    <ul class="list-disc ml-5 mt-2">
+        <li>Iris pisang & taburi oat.</li>
+        <li>Lelehkan coklat hitam.</li>
+        <li>Tuang di atas pisang & sajikan.</li>
+    </ul>
+</div>
+
+<!-- ITEM 20 -->
+<div class="bg-white rounded-2xl shadow-lg p-6" data-aos="fade-up">
+    <img src="https://cdn0-production-images-kly.akamaized.net/ORVo1Ac2XCYUHppYtdbSYXJVsGs=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2581777/original/023931400_1546595345-resep-puding-wortel-tomat-sehat.jpg" class="rounded-xl mb-4 w-full h-48 object-cover">
+    <h3 class="text-2xl font-semibold mb-2">Puding tomat wortel sehat</h3>
+    <p class="mb-2">Segar, enak, dan berkhasiat.</p>
+    <h4 class="font-semibold">Cara Membuat:</h4>
+    <ul class="list-disc ml-5 mt-2">
+        <li>Blender wortel dan tomat dan tambahkan air sekitar 400 ml.</li>
+        <li>Saring dan ambil sarinya hingga jadi kurang lebih 2 gelas.</li>
+        <li>Larutkan gula dan agar-agar bubuk dengan 1/2 gelas air.</li>
+        <li>LCampurkan sari tomat-wortel dengan larutan agar-agar.</li>
+         <li>Panaskan dengan api sedang, masukkan susu kental manis dan aduk hingga mendidih.</li>
+         <li>Matikan api dan dinginkan sejenak./li>
+         <li>Tuang puding pada cetakan dan biarkan mengeras.</li>
+    </ul>
+</div>
+
+
+    </div>
+</section>
+
+
+
+</body>
+</html>
