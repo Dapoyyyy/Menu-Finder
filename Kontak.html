@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Finder</title>
+
+    <!-- FONT BBH SANS HEGARTY -->
+    <style>
+        @font-face {
+            font-family: 'BBH Sans Hegarty';
+            src: url('fonts/BBH-Sans-Hegarty.woff2') format('woff2'),
+                 url('fonts/BBH-Sans-Hegarty.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .bbh-font {
+            font-family: 'BBH Sans Hegarty', sans-serif;
+        }
+
+        .text-glow {
+            text-shadow: 0 4px 25px rgba(0, 0, 0, 0.35);
+        }
+    </style>
+
+    <!-- AOS ANIMATION -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            AOS.init({
+                duration: 1100,
+                once: true
+            });
+        });
+    </script>
+</head>
+
+<body class="bg-white">
+
+<!-- HEADER -->
+<header class="bg-white/60 backdrop-blur-md fixed top-0 left-0 w-full z-50">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 lg:h-20">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+<style>
+    .font-title {
+        font-family: 'Montserrat', sans-serif;
+    }
+</style>
+
+<div>
+    <a href="index.html" class="flex items-center">
+        <span class="text-2xl font-title">Menu Finder</span>
+    </a>
+</div>
+
+
+            <div class="hidden lg:flex lg:items-center lg:space-x-10">
+                <a href="Menu.html" class="text-base text-black hover:text-opacity-70">Menu</a>
+                <a href="Kontak.html" class="text-base text-black   `hover:text-opacity-70">Kontak</a>
+                <a href="Manfaat.html" class="text-base text-black hover:text-opacity-70">Manfaat</a>
+                <a href="Tentang.html" class="text-base text-black hover:text-opacity-70">Tentang</a>
+            </div>
+
+            <a href="explore sekarang.html"
+   class="inline-flex items-center px-6 py-3 text-base font-semibold text-white 
+          bg-black rounded-full hover:bg-yellow-300 hover:text-black 
+          transition-all duration-300 ease-out transform hover:scale-105 active:scale-95">
+    Explore Sekarang
+</a>
+        </div>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+
+<section class="relative h-screen flex items-center justify-center bg-center bg-cover overflow-hidden"
+         style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+                background-attachment: fixed;"> <!-- PARALLAX -->
+
+    <!-- Overlay gelap -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <!-- Isi Hero -->
+    <div class="relative text-center text-white px-6 animate-slideUp">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            <span id="typing"></span>
+            <span class="border-r-4 border-white ml-1 animate-pulse"></span>
+        </h1>
+
+        <p class="text-lg md:text-2xl mb-6 animate-fadeIn">
+            Untuk konsultasi lebih lanjut, klik kontak di bawah ini
+
+            <style>
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Bebas+Neue&family=Momo+Trust+Display&family=Roboto+Slab:wght@100..900&display=swap');
+</style>
+        </p>
+
+        <!-- TOMBOL KONTAK -->
+        <a href="https://wa.me/6287783294545"
+           class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+            📞 6287783294545
+
+
+            
+            
+        </a>
+    </div>
+</section>
+
+
+
+<style>
+/* Fade In */
+@keyframes fadeIn { 
+  0% { opacity: 0; } 
+  100% { opacity: 1; } 
+}
+.animate-fadeIn {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* Slide Up */
+@keyframes slideUp {
+  0% { transform: translateY(40px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+.animate-slideUp {
+  animation: slideUp 1.2s ease-out forwards;
+}
+</style>
+
+<script>
+// TYPING EFFECT
+const text = "Hubungi Kami";
+let index = 0;
+
+function type() {
+    document.getElementById("typing").textContent = text.slice(0, index);
+    index++;
+
+    if (index <= text.length) {
+        setTimeout(type, 120); // kecepatan
+    }
+}
+
+window.onload = type;
+</script>

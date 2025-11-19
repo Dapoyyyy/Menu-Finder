@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Finder</title>
+
+    <!-- FONT BBH SANS HEGARTY -->
+    <style>
+        @font-face {
+            font-family: 'BBH Sans Hegarty';
+            src: url('fonts/BBH-Sans-Hegarty.woff2') format('woff2'),
+                 url('fonts/BBH-Sans-Hegarty.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .bbh-font {
+            font-family: 'BBH Sans Hegarty', sans-serif;
+        }
+
+        .text-glow {
+            text-shadow: 0 4px 25px rgba(0, 0, 0, 0.35);
+        }
+    </style>
+
+    <!-- AOS ANIMATION -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            AOS.init({
+                duration: 1100,
+                once: true
+            });
+        });
+    </script>
+</head>
+
+<body class="bg-white">
+
+<!-- HEADER -->
+<header class="bg-white/60 backdrop-blur-md fixed top-0 left-0 w-full z-50">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 lg:h-20">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+<style>
+    .font-title {
+        font-family: 'Montserrat', sans-serif;
+    }
+</style>
+
+<div>
+    <a href="index.html" class="flex items-center">
+        <span class="text-2xl font-title">Menu Finder</span>
+    </a>
+</div>
+
+
+            <div class="hidden lg:flex lg:items-center lg:space-x-10">
+                <a href="Menu.html" class="text-base text-black hover:text-opacity-70">Menu</a>
+                <a href="Kontak.html" class="text-base text-black hover:text-opacity-70">Kontak</a>
+                <a href="Manfaat.html" class="text-base text-black hover:text-opacity-70">Manfaat</a>
+                <a href="Tentang.html" class="text-base text-black hover:text-opacity-70">Tentang</a>
+            </div>
+
+            <a href="explore sekarang.html"
+   class="inline-flex items-center px-6 py-3 text-base font-semibold text-white 
+          bg-black rounded-full hover:bg-yellow-300 hover:text-black 
+          transition-all duration-300 ease-out transform hover:scale-105 active:scale-95">
+    Explore Sekarang
+</a>
+        </div>
+    </div>
+</header>
+
+
+  
+<!-- AOS ANIMATION -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+<section class="relative h-screen w-full 
+    bg-[url('https://images.unsplash.com/photo-1543353071-873f17a7a088')]
+    bg-cover bg-center bg-fixed">
+
+    <!-- Layer Blur -->
+    <div class="absolute inset-0 bg-black/40 backdrop-blur-md"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+
+        <h1 class="text-5xl font-bold text-white mb-4 drop-shadow-lg" 
+            data-aos="zoom-in">
+            Explore Now
+        </h1>
+
+        <p class="text-white/80 max-w-2xl mb-10 text-lg" 
+           data-aos="fade-up" data-aos-delay="150">
+            Temukan berbagai jenis zat makanan sehat yang penting untuk tubuh dan menunjang kesehatan jangka panjang.
+        </p>
+
+        <!-- Grid -->
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl w-full">
+
+            <!-- KARBOHIDRAT -->
+            <div class="bg-white/20 backdrop-blur-xl p-6 rounded-2xl 
+                shadow-lg hover:scale-105 hover:bg-white/30 
+                transition-all duration-300 cursor-pointer"
+                data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-xl font-bold text-white mb-2">Karbohidrat</h3>
+                <p class="text-white/80 text-sm">
+                    Sumber energi utama. Contoh: oats, nasi merah, roti gandum.
+                </p>
+            </div>
+
+            <!-- PROTEIN -->
+            <div class="bg-white/20 backdrop-blur-xl p-6 rounded-2xl 
+                shadow-lg hover:scale-105 hover:bg-white/30 
+                transition-all duration-300 cursor-pointer"
+                data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-xl font-bold text-white mb-2">Protein</h3>
+                <p class="text-white/80 text-sm">
+                    Membentuk jaringan otot & memperbaiki sel. Contoh: telur, ayam, ikan.
+                </p>
+            </div>
+
+            <!-- LEMAK SEHAT -->
+            <div class="bg-white/20 backdrop-blur-xl p-6 rounded-2xl 
+                shadow-lg hover:scale-105 hover:bg-white/30 
+                transition-all duration-300 cursor-pointer"
+                data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-xl font-bold text-white mb-2">Lemak Sehat</h3>
+                <p class="text-white/80 text-sm">
+                    Mendukung fungsi otak. Contoh: alpukat, almond, olive oil.
+                </p>
+            </div>
+
+            <!-- VITAMIN -->
+            <div class="bg-white/20 backdrop-blur-xl p-6 rounded-2xl 
+                shadow-lg hover:scale-105 hover:bg-white/30 
+                transition-all duration-300 cursor-pointer"
+                data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-xl font-bold text-white mb-2">Vitamin</h3>
+                <p class="text-white/80 text-sm">
+                    Memperkuat imun. Contoh: buah dan sayuran.
+                </p>
+            </div>
+
+            <!-- MINERAL -->
+            <div class="bg-white/20 backdrop-blur-xl p-6 rounded-2xl 
+                shadow-lg hover:scale-105 hover:bg-white/30 
+                transition-all duration-300 cursor-pointer"
+                data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-xl font-bold text-white mb-2">Mineral</h3>
+                <p class="text-white/80 text-sm">
+                    Baik untuk tulang & darah. Contoh: susu, bayam, ikan.
+                </p>
+            </div>
+
+            <!-- SERAT -->
+            <div class="bg-white/20 backdrop-blur-xl p-6 rounded-2xl 
+                shadow-lg hover:scale-105 hover:bg-white/30 
+                transition-all duration-300 cursor-pointer"
+                data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-xl font-bold text-white mb-2">Serat</h3>
+                <p class="text-white/80 text-sm">
+                    Melancarkan pencernaan. Contoh: buah, sayur, gandum utuh.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>

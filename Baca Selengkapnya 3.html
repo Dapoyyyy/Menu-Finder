@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Finder</title>
+
+    <!-- FONT BBH SANS HEGARTY -->
+    <style>
+        @font-face {
+            font-family: 'BBH Sans Hegarty';
+            src: url('fonts/BBH-Sans-Hegarty.woff2') format('woff2'),
+                 url('fonts/BBH-Sans-Hegarty.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .bbh-font {
+            font-family: 'BBH Sans Hegarty', sans-serif;
+        }
+
+        .text-glow {
+            text-shadow: 0 4px 25px rgba(0, 0, 0, 0.35);
+        }
+    </style>
+
+    <!-- AOS ANIMATION -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            AOS.init({
+                duration: 1100,
+                once: true
+            });
+        });
+    </script>
+</head>
+
+<body class="bg-white">
+
+<!-- HEADER -->
+<header class="bg-white/60 backdrop-blur-md fixed top-0 left-0 w-full z-50">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 lg:h-20">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+<style>
+    .font-title {
+        font-family: 'Montserrat', sans-serif;
+    }
+</style>
+
+<div>
+    <a href="index.html" class="flex items-center">
+        <span class="text-2xl font-title">Menu Finder</span>
+    </a>
+</div>
+
+            <div class="hidden lg:flex lg:items-center lg:space-x-10">
+                <a href="Menu.html" class="text-base text-black hover:text-opacity-70">Menu</a>
+                <a href="Kontak.html" class="text-base text-black hover:text-opacity-70">Kontak</a>
+                <a href="Manfaat.html" class="text-base text-black hover:text-opacity-70">Manfaat</a>
+                <a href="Tentang.html" class="text-base text-black hover:text-opacity-70">Tentang</a>
+            </div>
+
+            <a href="explore sekarang.html"
+   class="inline-flex items-center px-6 py-3 text-base font-semibold text-white 
+          bg-black rounded-full hover:bg-yellow-300 hover:text-black 
+          transition-all duration-300 ease-out transform hover:scale-105 active:scale-95">
+    Explore Sekarang
+</a>
+        </div>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="relative w-full min-h-screen flex items-center justify-center text-center pt-32 overflow-hidden">
+
+    <!-- Parallax Background -->
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c')] 
+        bg-cover bg-center brightness-75 animate-slowMove blur-md">
+    </div>
+
+    <!-- Light Glow Effect -->
+    <div class="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent"></div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-3xl mx-auto px-6 py-12 
+        bg-white/20 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20
+        animate-float"
+        data-aos="zoom-in">
+
+        <h1 class="text-4xl md:text-5xl font-bold bbh-font text-white text-glow mb-6">
+            Kesimpulan Protein Tinggi untuk Energi
+        </h1>
+
+        <p class="text-lg md:text-xl text-white/90 bbh-font leading-relaxed" data-aos="fade-up" data-aos-delay="300">
+           Makanan tinggi protein, seperti telur, ikan, ayam, kacang-kacangan, dan susu, memberikan energi yang tahan lama bagi tubuh. Protein membantu membangun dan memperbaiki otot, meningkatkan metabolisme, serta mendukung fungsi organ dan sistem imun. Mengonsumsi protein yang cukup setiap hari sangat penting untuk menjaga stamina dan kesehatan secara keseluruhan.
+        </p>
+
+        <a href="Menu.html"
+           class="inline-block mt-8 px-8 py-3 bg-black text-white rounded-full 
+           bbh-font font-semibold hover:bg-yellow-300 hover:text-black transition duration-200 active:scale-95"
+           data-aos="fade-up" data-aos-delay="500">
+            Lihat Menu Sehat
+        </a>
+    </div>
+</section>
+
+<!-- Custom Animations -->
+<style>
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+.animate-float {
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes slowMove {
+    0% { background-position: 50% 50%; }
+    50% { background-position: 50% 55%; }
+    100% { background-position: 50% 50%; }
+}
+.animate-slowMove {
+    animation: slowMove 12s ease-in-out infinite;
+}
+</style>
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Finder</title>
+
+    <!-- FONT BBH SANS HEGARTY -->
+    <style>
+        @font-face {
+            font-family: 'BBH Sans Hegarty';
+            src: url('fonts/BBH-Sans-Hegarty.woff2') format('woff2'),
+                 url('fonts/BBH-Sans-Hegarty.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .bbh-font {
+            font-family: 'BBH Sans Hegarty', sans-serif;
+            font-weight: 400;
+        }
+
+        /* Glow putih lembut */
+        .text-glow {
+            text-shadow: 0 4px 25px rgba(0, 0, 0, 0.35);
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+<!-- HEADER -->
+<header class="bg-white/60 backdrop-blur-md fixed top-0 left-0 w-full z-50">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 lg:h-20">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+<style>
+    .font-title {
+        font-family: 'Montserrat', sans-serif;
+    }
+</style>
+
+<div>
+    <a href="index.html" class="flex items-center">
+        <span class="text-2xl font-title">Menu Finder</span>
+    </a>
+</div>
+
+
+            <!-- Menu Desktop -->
+            <div class="hidden lg:flex lg:items-center lg:space-x-10">
+                <a href="Menu.html" class="text-base text-black hover:text-opacity-70">Menu</a>
+                <a href="Kontak.html" class="text-base text-black hover:text-opacity-70">Kontak</a>
+                <a href="Manfaat.html" class="text-base text-black hover:text-opacity-70">Manfaat</a>
+                <a href="Tentang.html" class="text-base text-black hover:text-opacity-70">Tentang</a>
+            </div>
+
+            <!-- Join -->
+            <a href="explore sekarang.html"
+   class="inline-flex items-center px-6 py-3 text-base font-semibold text-white 
+          bg-black rounded-full hover:bg-yellow-300 hover:text-black 
+          transition-all duration-300 ease-out transform hover:scale-105 active:scale-95">
+    Explore Sekarang
+</a>
+        </div>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="relative py-40">
+
+  <!-- BACKGROUND -->
+  <div 
+    class="absolute inset-0 bg-center bg-cover blur-lg brightness-75"
+    style="background-image: url('https://www.frisianflag.com/storage/app/media/uploaded-files/food-1.jpg');">
+  </div>
+
+  <!-- OVERLAY GELAP -->
+  <div class="absolute inset-0 bg-black/30"></div>
+
+  <!-- CONTENT -->
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 animate-fadeInUp">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-4 md:items-center md:gap-8">
+
+      <!-- GAMBAR (OPSI: kalau mau disembunyikan hapus saja) -->
+      <div class="md:col-span-3">
+    <img src="https://www.frisianflag.com/storage/app/media/uploaded-files/food-1.jpg"
+         class="rounded-2xl shadow-2xl animate-zoomIn"
+         alt="">
+</div>
+
+
+      <!-- TEKS -->
+      <div class="md:col-span-1">
+        <div class="max-w-prose md:max-w-none text-white">
+          <h2 class="text-2xl font-semibold sm:text-3xl">
+            Apa itu Menu finder?
+          </h2>
+
+          <p class="mt-4 text-pretty">
+           Menu Finder adalah website yang membantu Anda menemukan menu makanan dengan mudah berdasarkan kebutuhan Anda. Baik itu mencari makanan sehat, menu rendah kalori, ataupun rekomendasi cepat untuk sehari-hari, Menu Finder mempermudah Anda memilih hidangan terbaik tanpa ribet.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- ANIMASI TAILWIND CUSTOM -->
+<style>
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  @keyframes zoomIn {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  .animate-zoomIn {
+    animation: zoomIn 1s ease-out forwards;
+  }
+</style>
